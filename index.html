@@ -14,7 +14,7 @@
 
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.scss">
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/open-sauce-sans" type="text/css"/>
 
   <!-- Google Tag Manager -->
@@ -31,15 +31,20 @@
   <!-- Add your site or application content here -->
 
     <header>
-      <div>logo</div>
+      <div class="logo">istnestudio</div>
       <nav>
-        <button>przycisk</button>
-        <a href="">Oferta</a>
-        <a href="">Klienci</a>
-        <a href="">O mnie</a>
-        <a href="">Kontakt</a>
-        <a href="">Logo fb</a>
-        <a href="">Logo behance</a>
+        <input type='checkbox' name='nav_button' value='valuable' id="nav_button" />
+        <label for="nav_button"></label>
+        <div class="nav_overlay">
+          <div class="nav_links">
+          <a href="" class="nav_link">Oferta</a>
+          <a href="" class="nav_link">Klienci</a>
+          <a href="" class="nav_link">O mnie</a>
+          <a href="" class="nav_link">Kontakt</a>
+          <a href="" class="nav_icon">Logo fb</a>
+          <a href="" class="nav_icon">Logo behance</a>
+          </div>
+        </div>
       </nav>
     </header>
     <section>
@@ -178,14 +183,6 @@
 
 
   <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4KLGBF"
                     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
