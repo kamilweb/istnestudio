@@ -23,6 +23,42 @@ body {
   color: #000;
   padding: 30px 24px 0;
   margin: 0;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,p{
+  margin: 0;
+}
+
+.arrow {
+  width: 40px;
+  height: 48px;
+}
+
+.copy_header {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.copy_number {
+  color: #F2AE30;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.copy_paragraph {
+  font-size: 18px;
+  line-height: 36px;
 }
 
 @import './header.scss';
+@import './hero.scss';
+@import './family.scss';
+@import './copy.scss';
+@import './slider.scss';
+@import './email.scss';
+@import './testimonials.scss';
+@import './aboutMe.scss';
+@import './footer.scss';

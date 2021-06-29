@@ -1,5 +1,6 @@
 header {
   display: flex;
+  height: 35px;
 }
 
 .logo {
@@ -16,7 +17,7 @@ header {
     width: 25px;
     height: 25px;
     position: relative;
-    z-index: 9;
+    z-index: 99;
     margin-top: 10px;
     &:before, &:after {
       content: '';
@@ -60,6 +61,7 @@ header {
       top:0;
       left: 0;
       right:0;
+      z-index: 9;
     }
   }
 }
@@ -84,5 +86,18 @@ header {
   text-decoration: none;
   text-align: right;
   margin-bottom: 32px;
+}
+
+.nav_icons {
+  display: flex;
+  position: absolute;
+  bottom: 77px;
+  left: 70px;
+}
+
+.nav_icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 24px;
 }
 
