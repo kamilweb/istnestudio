@@ -21,13 +21,23 @@ body {
   font-weight: normal;
   font-style: normal;
   color: #000;
-  padding: 30px 24px 0;
   margin: 0;
+}
+
+main {
   overflow-x: hidden;
 }
 
 h1,h2,h3,h4,p{
   margin: 0;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .arrow {
@@ -51,6 +61,24 @@ h1,h2,h3,h4,p{
 .copy_paragraph {
   font-size: 18px;
   line-height: 36px;
+}
+
+.button_primary {
+  background-color: #fff;
+  padding: 12px 18px;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  display: inline-block;
+  transition: .2s ease;
+  &:hover, &:active {
+    background-color: #000;
+    color: #F2AE30;
+    text-decoration: none;
+  }
 }
 
 @import './header.scss';

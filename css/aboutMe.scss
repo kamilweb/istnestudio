@@ -1,0 +1,44 @@
+.aboutMe {
+  img {
+    width: 351px;
+    height: 390px;
+  }
+
+  h4 {
+    font-size: 36px;
+    line-height: 48px;
+    margin-top: 46px;
+    margin-bottom: 47px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 36px;
+
+    strong {
+      font-weight: 600;
+    }
+  }
+}
+
+.aboutMe_img_wrapper {
+  position: relative;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2AE30;
+    border-radius: 50%;
+    position: absolute;
+    top: 270px;
+    right: 26px;
+    padding: 25px;
+  }
+}
+
+.aboutMe_text_wrapper {
+  padding: 0 24px;
+}
+
+
