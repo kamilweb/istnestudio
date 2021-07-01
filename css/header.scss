@@ -5,10 +5,15 @@ header {
 }
 
 .logo {
+  font-family: 'OpenSauceSansSemiBold', serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   margin-right: auto;
+  color: #000;
+  &:hover, &:active {
+    text-decoration: none;
+  }
 }
 
 #nav_button {

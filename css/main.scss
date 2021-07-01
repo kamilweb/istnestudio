@@ -17,7 +17,7 @@ orange: #F2AE30
 
 
 body {
-  font-family: 'OpenSauceSansRegular', Arial, serif;
+  font-family: 'OpenSauceSansRegular', serif;
   font-weight: normal;
   font-style: normal;
   color: #000;
@@ -33,6 +33,10 @@ h1,h2,h3,h4,p{
   font-weight: 400;
 }
 
+b, strong {
+  font-family: 'OpenSauceSansSemiBold', serif;
+}
+
 a {
   text-decoration: none;
   &:hover {
@@ -43,24 +47,6 @@ a {
 .arrow {
   width: 40px;
   height: 48px;
-}
-
-.copy_header {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 48px;
-}
-
-.copy_number {
-  color: #F2AE30;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 48px;
-}
-
-.copy_paragraph {
-  font-size: 18px;
-  line-height: 36px;
 }
 
 .button_primary {
@@ -90,3 +76,4 @@ a {
 @import './testimonials.scss';
 @import './aboutMe.scss';
 @import './footer.scss';
+@import './policy.scss';

@@ -1,13 +1,13 @@
 {
-  "name": " ",
+  "name": "istnestudio",
   "version": "0.0.1",
-  "description": "",
-  "keywords": "",
+  "description": "Projektowanie materiałów sprzedażowych, tworzenie stron internetowych a także sporządzanie kroniki budowy inwestycji deweloperskich z drona!",
+  "keywords": "Obsługa inwestycji deweloperskich",
   "license": "",
-  "author": "",
+  "author": "Kamil Kalicki",
   "scripts": {
-    "build": "parcel build index.html",
-    "dev": "parcel index.html --open",
+    "build": "parcel build index.html polityka-prywatnosci.html",
+    "dev": "parcel polityka-prywatnosci.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

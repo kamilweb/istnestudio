@@ -1,0 +1,79 @@
+.policy {
+  padding: 0 24px 0;
+  margin-bottom: 48px;
+  max-width: 830px;
+  position: relative;
+  overflow: visible;
+
+  ul, ol {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 0 23px;
+    padding: 0;
+  }
+  ol {
+    margin: 0 0 0 18px;
+  }
+
+  .button_primary {
+    display: none;
+
+    &:hover {
+      background-color: #000;
+      color: #F2AE30;
+    }
+
+    @media only screen and (min-width: 1280px) {
+      display: inline-block;
+      position: absolute;
+      top: 16px;
+      right: -360px;
+      background-color: #F2AE30;
+      color: #000;
+    }
+  }
+}
+
+.policy_main_header {
+  font-size: 36px;
+  line-height: 48px;
+  color: #F2AE30;
+  margin-top: 68px;
+  @media only screen and (min-width: 1280px) {
+    font-size: 64px;
+    line-height: 72px;
+    margin-top: 48px;
+    margin-bottom: 128px;
+  }
+}
+
+.policy_header_wrapper {
+  @media only screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.policy_number {
+  color: #F2AE30;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.policy_header {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 47px;
+  @media only screen and (min-width: 768px) {
+    display: inline-block;
+    margin-left: 15px;
+  }
+}
+
+.policy_paragraph {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.policy_section {
+  margin-top: 48px;
+}
