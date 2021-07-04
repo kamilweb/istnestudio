@@ -6,6 +6,10 @@
   padding: 48px 45px;
   margin: 112px 24px 34px;
   text-align: center;
+  @media only screen and (min-width: 768px) {
+    margin-top: 126px;
+    margin-bottom: 48px;
+  }
 }
 
 footer {

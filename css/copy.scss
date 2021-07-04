@@ -1,10 +1,17 @@
-article {
+.copy_article {
   padding: 253px 24px 0;
+  @media only screen and (min-width: 768px) {
+    padding-top: 305px;
+  }
 }
 
 .copy {
   position: relative;
   margin-bottom: 41px;
+
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 26px;
+  }
 
   &:nth-of-type(2) {
     margin-bottom: 97px;
@@ -21,6 +28,11 @@ article {
   left: 27px;
   width: 650px;
   height: 547px;
+  @media only screen and (min-width: 768px) {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -543px;
+  }
 }
 
 .iphone_wrapper {
@@ -37,6 +49,9 @@ article {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  @media only screen and (min-width: 768px) {
+    top: -20px;
+  }
 }
 
 .copy_header {

@@ -17,6 +17,7 @@
 
   <link href="css/main.scss" rel="stylesheet">
   <link href="https://fontlibrary.org//face/open-sauce-sans" media="screen" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
 
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
@@ -105,7 +106,7 @@
     <path fill-rule="evenodd" clip-rule="evenodd" d="M23.1373 36.5546C24.4121 34.8993 25.9124 33.5035 27.5175 32.3425C32.0664 29.0526 37.4668 27.6245 41.0974 27.2995L41.454 31.2836C38.372 31.5594 33.7035 32.8051 29.8617 35.5837C26.0964 38.3069 23.1379 42.4742 23.1379 48.819H23.1378H19.1379H19.1378C19.1378 42.4742 16.1793 38.3069 12.4141 35.5837C8.57224 32.8051 3.90376 31.5594 0.821777 31.2836L1.17839 27.2995C4.80898 27.6245 10.2094 29.0526 14.7582 32.3425C16.3629 33.5031 17.8628 34.8985 19.1373 36.5532V0H23.1373V36.5546Z" fill="#000"/>
   </svg>
 </section>
-  <article>
+  <article class="copy_article">
     <section class="copy">
       <img src="./img/mobile/ipad_mobile.png" alt="ipad" class="ipad"/>
       <div>
@@ -149,7 +150,43 @@
     </section>
   </article>
   <section class="slider">
-    slider
+    <div id="splide" class="splide">
+      <div class="splide__arrows">
+        <button class="splide__arrow splide__arrow--prev">
+          <svg width="49" height="42" viewBox="0 0 49 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M29.2915 41.2754C29.8923 34.5628 34.639 21.1377 48.819 21.1377" stroke="#F2AE30" stroke-width="4"/>
+            <path d="M29.2915 1C29.8924 7.71258 34.639 21.1377 48.819 21.1377" stroke="#F2AE30" stroke-width="4"/>
+            <path d="M0 21.1382L46.0727 21.1382" stroke="#F2AE30" stroke-width="4"/>
+          </svg>
+        </button>
+        <button class="splide__arrow splide__arrow--next">
+          <svg width="49" height="42" viewBox="0 0 49 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M29.2915 41.2754C29.8923 34.5628 34.639 21.1377 48.819 21.1377" stroke="#F2AE30" stroke-width="4"/>
+            <path d="M29.2915 1C29.8924 7.71258 34.639 21.1377 48.819 21.1377" stroke="#F2AE30" stroke-width="4"/>
+            <path d="M0 21.1382L46.0727 21.1382" stroke="#F2AE30" stroke-width="4"/>
+          </svg>
+        </button>
+      </div>
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="./img/mobile/hero_mobile.jpg" alt="Obsługa inwestycji deweloperskich" />
+          </li>
+          <li class="splide__slide">
+            <img src="./img/mobile/hero_mobile.jpg" alt="Obsługa inwestycji deweloperskich" />
+          </li>
+          <li class="splide__slide">
+            <img src="./img/mobile/hero_mobile.jpg" alt="Obsługa inwestycji deweloperskich" />
+          </li>
+          <li class="splide__slide">
+            <img src="./img/mobile/hero_mobile.jpg" alt="Obsługa inwestycji deweloperskich" />
+          </li>
+          <li class="splide__slide">
+            <img src="./img/mobile/hero_mobile.jpg" alt="Obsługa inwestycji deweloperskich" />
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
   <div class="email">
       <h4>Zainteresowała Cię moja oferta?</h4>

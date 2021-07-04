@@ -1,3 +1,4 @@
+import Splide from '@splidejs/splide';
 (window.onload = function() {
   var cookies = document.cookie;
   var acceptedCookies = cookies.indexOf('accepted=1');
@@ -13,4 +14,12 @@
       cookieContainer.style.display = 'none';
     }
   }
+
+  //FIXME poprawić paginację
+
+  new Splide( '.splide', {
+    // autoWidth: true,
+    // focus: 'center',
+    padding: '0 10px',
+  } ).mount();
 })();

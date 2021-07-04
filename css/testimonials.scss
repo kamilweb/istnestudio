@@ -1,6 +1,9 @@
 .testimonials {
   margin: 65px 24px 275px;
   color: #fff;
+  @media only screen and (min-width: 768px) {
+    margin-top: 96px;
+  }
 
   h4 {
     font-weight: normal;
@@ -16,7 +19,6 @@
   }
 
   a {
-    margin-bottom: 160px;
     white-space: nowrap;
   }
 
@@ -33,7 +35,10 @@
 
 .testimonials_bg {
   background-color: #3F8D94;
-  padding: 55px 18% 0;
+  padding: 55px 18% 160px;
   border-radius: 30px;
   position: relative;
+  @media only screen and (min-width: 768px) {
+    padding-bottom: 196px;
+  }
 }

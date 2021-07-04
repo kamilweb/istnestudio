@@ -1,5 +1,5 @@
 .hero {
-  height: calc(100vh - 136px);
+  height: calc(100vh - 135px);
   padding: 22px 24px 48px;
   position: relative;
 
@@ -58,6 +58,9 @@
     position: absolute;
     bottom: 47px;
     width: 286px;
+    @media only screen and (min-width: 768px) {
+      bottom: 69px;
+    }
     strong {
       font-weight: 400;
       font-size: 18px;
