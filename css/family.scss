@@ -4,6 +4,9 @@
   @media only screen and (min-width: 768px) {
     padding-bottom: 214px;
   }
+  @media only screen and (min-width: 1280px) {
+    padding: 109px 96px 30px;
+  }
 
   img {
     position: absolute;
@@ -20,14 +23,40 @@
     font-size: 28px;
     font-style: normal;
     line-height: 48px;
+
+    @media only screen and (min-width: 1280px) {
+      font-size: 32px;
+      line-height: 48px;
+      width: calc(50% - 24px);
+    }
   }
   p {
     font-size: 18px;
     font-style: normal;
     line-height: 36px;
     margin-top: 46px;
+
+    @media only screen and (min-width: 1280px) {
+      width: calc(50% - 12px);
+      margin: 189px 0 0 calc(50% + 12px);
+      font-size: 24px;
+      line-height: 40px;
+    }
   }
+
   .arrow {
     margin-top: 49px;
+    @media only screen and (min-width: 1280px) {
+      margin-top: 0px;
+      position: relative;
+      top: -98px;
+    }
+  }
+}
+
+.family_wrapper {
+  @media only screen and (min-width: 1280px) {
+    max-width: 1440px;
+    margin: auto;
   }
 }

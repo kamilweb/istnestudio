@@ -5,17 +5,30 @@
     margin-top: 96px;
   }
 
+  @media only screen and (min-width: 1280px) {
+    max-width: 1440px;
+    margin: 144px 48px 260px;
+  }
+
   h4 {
     font-weight: normal;
     font-size: 36px;
     line-height: 48px;
     margin-bottom: 24px;
+    @media only screen and (min-width: 1280px) {
+      font-size: 64px;
+      line-height: 72px;
+    }
   }
 
   p {
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 24px;
+
+    @media only screen and (min-width: 1280px) {
+      max-width: 255px;
+    }
   }
 
   a {
@@ -30,6 +43,13 @@
       left: auto;
       right: -24px;
     }
+
+    @media only screen and (min-width: 1280px) {
+      left: auto;
+      right: -421px;
+      top: -160px;
+    }
+
   }
 }
 
@@ -40,5 +60,9 @@
   position: relative;
   @media only screen and (min-width: 768px) {
     padding-bottom: 196px;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    padding: 97px 12% 99px;
   }
 }

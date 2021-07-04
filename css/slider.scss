@@ -1,8 +1,21 @@
+.slider_desktop_wrapper {
+  @media only screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 106px);
+    margin-left: auto;
+  }
+}
+
 .slider {
   margin-top: 96px;
-  padding: 0 24px;
+
+  @media only screen and (min-width: 1280px) {
+    margin-top: 60px;
+  }
 
   .splide__arrow {
+    z-index: 9;
     height: 40px;
     width: 48px;
     top: auto;

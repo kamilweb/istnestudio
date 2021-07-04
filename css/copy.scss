@@ -3,6 +3,11 @@
   @media only screen and (min-width: 768px) {
     padding-top: 305px;
   }
+  @media only screen and (min-width: 1280px) {
+    max-width: 1440px;
+    margin: auto;
+    padding: 167px 96px;
+  }
 }
 
 .copy {
@@ -13,8 +18,34 @@
     margin-bottom: 26px;
   }
 
+  @media only screen and (min-width: 1280px) {
+    display: flex;
+  }
+
+  &.copy_first {
+    @media only screen and (min-width: 1280px) {
+      .copy_header_wrapper {
+        width: calc(50% - 12px);
+      }
+      .copy_paragraph {
+        margin-top: 60px;
+        margin-left: auto;
+        width: calc(50% - 12px);
+      }
+    }
+  }
   &:nth-of-type(2) {
     margin-bottom: 97px;
+    @media only screen and (min-width: 1280px) {
+      flex-direction: column;
+      margin-top: 135px;
+      margin-left: auto;
+      margin-bottom: 170px;
+      width: calc(50% - 12px);
+      .copy_header {
+        margin-bottom: 95px;
+      }
+    }
   }
 
   .copy_header {
@@ -33,6 +64,14 @@
     transform: translateX(-50%);
     top: -543px;
   }
+  @media only screen and (min-width: 1280px) {
+    transform: none;
+    left: 50%;
+    top: 376px;
+    margin-left: -783px;
+    width: 676px;
+    height: 573px;
+  }
 }
 
 .iphone_wrapper {
@@ -40,6 +79,14 @@
   width: 100%;
   height: 595px;
   position: relative;
+  @media only screen and (min-width: 1280px) {
+    width: 251px;
+    height: 502px;
+    position: absolute;
+    top: 417px;
+    left: 92px;
+    margin-top: 0;
+  }
 }
 
 .iphone {
@@ -52,20 +99,48 @@
   @media only screen and (min-width: 768px) {
     top: -20px;
   }
+  @media only screen and (min-width: 1280px) {
+    width: 100%;
+    height: 100%;
+  }
 }
 
-.copy_header {
+.copy_header, .copy_number {
   font-size: 36px;
   line-height: 48px;
+  @media only screen and (min-width: 1280px) {
+    font-size: 64px;
+    line-height: 72px;
+  }
 }
 
 .copy_number {
   color: #F2AE30;
-  font-size: 36px;
-  line-height: 48px;
 }
 
 .copy_paragraph {
   font-size: 18px;
   line-height: 36px;
+  @media only screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 40px;
+  }
 }
+
+.last_coppy_desktop_wrapper {
+  @media only screen and (min-width: 1280px) {
+    display: flex;
+  }
+  .copy {
+    @media only screen and (min-width: 1280px) {
+      flex-direction: column;
+      width: calc(50% - 12px);
+
+      .copy_header {
+        margin-bottom: 95px;
+      }
+
+    }
+  }
+}
+

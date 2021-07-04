@@ -1,7 +1,29 @@
 .aboutMe {
+  @media only screen and (min-width: 1280px) {
+    display: flex;
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  .aboutMe_img_wrapper {
+    @media only screen and (min-width: 1280px) {
+      width: 250px;
+      height: 250px;
+      flex-shrink: 0;
+      margin-left: 100px;
+    }
+
+  }
+
   img {
-    width: 351px;
+    width: 391px;
     height: 390px;
+    margin-left: -40px;
+    @media only screen and (min-width: 1280px) {
+      width: 100%;
+      height: 100%;
+      margin-left: 0;
+    }
   }
 
   h4 {
@@ -9,11 +31,20 @@
     line-height: 48px;
     margin-top: 46px;
     margin-bottom: 47px;
+    @media only screen and (min-width: 1280px) {
+      font-size: 64px;
+      line-height: 72px;
+    }
   }
 
   p {
     font-size: 18px;
     line-height: 36px;
+
+    @media only screen and (min-width: 1280px) {
+      font-size: 24px;
+      line-height: 40px;
+    }
 
     strong {
       font-weight: 600;
@@ -33,12 +64,28 @@
     position: absolute;
     top: 270px;
     left: 269px;
-    padding: 25px;
+    padding: 20px;
+
+    @media only screen and (min-width: 1280px) {
+      top: 218px;
+      left: 50%;
+      transform: translateX(-50%);
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
   }
 }
 
 .aboutMe_text_wrapper {
   padding: 0 24px;
+
+  @media only screen and (min-width: 1280px) {
+    padding: 45px 0 0 0;
+    margin-left: 119px;
+    max-width: 730px;
+  }
 }
 
 

@@ -10,6 +10,19 @@
     margin-top: 126px;
     margin-bottom: 48px;
   }
+
+  @media only screen and (min-width: 1280px) {
+    height: 50vh;
+    font-size: 24px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 170px 48px 48px;
+    p {
+      max-width: 96%;
+      margin: 0 auto;
+    }
+  }
 }
 
 footer {
@@ -18,9 +31,17 @@ footer {
   line-height: 32px;
   padding: 63px 24px 60px;
 
+  @media only screen and (min-width: 1280px) {
+    height: 50vh;
+  }
+
   h4 {
     font-size: 36px;
     line-height: 48px;
+    @media only screen and (min-width: 1280px) {
+      font-size: 64px;
+      line-height: 72px;
+    }
   }
 
   a {
@@ -46,6 +67,9 @@ footer {
     bottom: 0;
     background: rgba(242, 174, 48, 0.95);
     z-index: 1;
+    @media only screen and (min-width: 1280px) {
+      display: none;
+    }
   }
 
   img {
@@ -56,12 +80,38 @@ footer {
   }
 }
 
+.footer_wrapper {
+  @media only screen and (min-width: 1280px) {
+    display: flex;
+    max-width: 1440px;
+    margin: auto;
+    padding: 61px 40px 61px 75px;
+    position: relative;
+  }
+}
+
+.footer_links {
+  @media only screen and (min-width: 1280px) {
+    display: flex;
+    margin-left: 100px;
+    div:first-of-type {
+      margin-right: 50px;
+    }
+  }
+}
+
 .footer_link {
   display: block;
 }
 
 .footer_item {
   margin-bottom: 8px;
+  @media only screen and (min-width: 1280px) {
+    margin-top: 10px;
+    &:nth-of-type(2){
+      margin: 0;
+    }
+  }
 }
 
 .footer_icon {
@@ -70,10 +120,17 @@ footer {
   margin-top: 75px;
   margin-bottom: 10px;
   display: block;
+  @media only screen and (min-width: 1280px) {
+    margin-top: 113px;
+    margin-bottom: 0;
+  }
 }
 
 .footer_work {
   margin-top: 50px;
+  @media only screen and (min-width: 1280px) {
+    margin-top: 113px;
+  }
 }
 
 .privacy_link {
@@ -81,4 +138,10 @@ footer {
   line-height: 18px;
   margin-top: 117px;
   display: inline-block;
+  @media only screen and (min-width: 1280px) {
+    position: absolute;
+    top: 250px;
+    left: 75px;
+    margin-top: 0;
+  }
 }
