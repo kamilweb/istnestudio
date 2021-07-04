@@ -1,11 +1,15 @@
 (window.onload = function() {
-  const cookies = document.cookie;
-  const acceptedCookies = cookies.indexOf('accepted=1');
+  var cookies = document.cookie;
+  var acceptedCookies = cookies.indexOf('accepted=1');
   if(acceptedCookies < 0) {
-    const cookieContainer = document.getElementById('cookie_container');
+
+    var cookieContainer = document.getElementById('cookie_container');
     cookieContainer.style.display = 'block';
     document.getElementById('cookie_button').onclick = function(){
-      document.cookie = "accepted=1";
+      var expires = new Date();
+      // expiration one year
+      expires = new Date(expires.getTime() +1000*60*60*24*365);
+      document.cookie = 'accepted=1; expires='+expires.toGMTString()+';';
       cookieContainer.style.display = 'none';
     }
   }
