@@ -8,6 +8,9 @@
     margin: auto;
     padding: 167px 96px;
   }
+  @media only screen and (min-width: 1920px) {
+    max-width: 1250px;
+  }
 }
 
 .copy {
@@ -82,6 +85,9 @@
     width: 811px;
     height: 677px;
   }
+  @media only screen and (min-width: 1920px) {
+    margin-left: -945px;
+  }
 }
 
 .iphone_wrapper {
@@ -101,6 +107,9 @@
     width: 299px;
     height: 597px;
     left: 103px;
+  }
+  @media only screen and (min-width: 1920px) {
+    left: 24px;
   }
 }
 

@@ -15,6 +15,11 @@
     margin-bottom: 240px;
   }
 
+  @media only screen and (min-width: 1920px) {
+    margin-top: 90px;
+    max-width: 100%;
+  }
+
   h4 {
     font-weight: normal;
     font-size: 36px;
@@ -58,6 +63,11 @@
     @media only screen and (min-width: 1440px) {
       right: -328px;
     }
+
+    @media only screen and (min-width: 1920px) {
+      right: 50%;
+      margin-right: -960px;
+    }
   }
 }
 
@@ -72,5 +82,9 @@
 
   @media only screen and (min-width: 1280px) {
     padding: 97px 12% 99px;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    padding-left: 20%;
   }
 }
