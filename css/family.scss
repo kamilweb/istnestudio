@@ -7,6 +7,9 @@
   @media only screen and (min-width: 1280px) {
     padding: 109px 96px 30px;
   }
+  @media only screen and (min-width: 1440px) {
+    padding-bottom: 70px;
+  }
 
   img {
     position: absolute;
@@ -42,6 +45,9 @@
       font-size: 24px;
       line-height: 40px;
     }
+    @media only screen and (min-width: 1440px) {
+      margin-top: 327px;
+    }
   }
 
   .arrow {
@@ -50,6 +56,9 @@
       margin-top: 0px;
       position: relative;
       top: -98px;
+    }
+    @media only screen and (min-width: 1440px) {
+      top: -60px;
     }
   }
 }

@@ -10,6 +10,11 @@
     margin: 144px 48px 260px;
   }
 
+  @media only screen and (min-width: 1440px) {
+    margin-top: 94px;
+    margin-bottom: 240px;
+  }
+
   h4 {
     font-weight: normal;
     font-size: 36px;
@@ -50,6 +55,9 @@
       top: -160px;
     }
 
+    @media only screen and (min-width: 1440px) {
+      right: -328px;
+    }
   }
 }
 

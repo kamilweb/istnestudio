@@ -5,6 +5,9 @@
     width: calc(50% - 106px);
     margin-left: auto;
   }
+  @media only screen and (min-width: 1440px) {
+    width: calc(50% - 116px);
+  }
 }
 
 .slider {

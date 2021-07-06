@@ -5,16 +5,6 @@
     margin: auto;
   }
 
-  .aboutMe_img_wrapper {
-    @media only screen and (min-width: 1280px) {
-      width: 250px;
-      height: 250px;
-      flex-shrink: 0;
-      margin-left: 100px;
-    }
-
-  }
-
   img {
     width: 391px;
     height: 390px;
@@ -55,6 +45,19 @@
 .aboutMe_img_wrapper {
   position: relative;
 
+  @media only screen and (min-width: 1280px) {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    margin-left: 100px;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    width: 290px;
+    height: 290px;
+    margin-left: 98px;
+  }
+
   a {
     display: flex;
     align-items: center;
@@ -75,6 +78,15 @@
         height: 25px;
       }
     }
+
+    @media only screen and (min-width: 1440px) {
+      top: 269px;
+      padding: 26px;
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
   }
 }
 
@@ -85,6 +97,12 @@
     padding: 45px 0 0 0;
     margin-left: 119px;
     max-width: 730px;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    padding-top: 64px;
+    margin-left: 132px;
+    max-width: 850px;
   }
 }
 

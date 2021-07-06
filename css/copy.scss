@@ -46,6 +46,10 @@
         margin-bottom: 95px;
       }
     }
+    @media only screen and (min-width: 1440px) {
+      margin-top: 95px;
+      margin-bottom: 130px;
+    }
   }
 
   .copy_header {
@@ -72,6 +76,12 @@
     width: 676px;
     height: 573px;
   }
+
+  @media only screen and (min-width: 1440px) {
+    margin-left: -906px;
+    width: 811px;
+    height: 677px;
+  }
 }
 
 .iphone_wrapper {
@@ -86,6 +96,11 @@
     top: 417px;
     left: 92px;
     margin-top: 0;
+  }
+  @media only screen and (min-width: 1440px) {
+    width: 299px;
+    height: 597px;
+    left: 103px;
   }
 }
 
