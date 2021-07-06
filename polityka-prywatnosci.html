@@ -43,12 +43,12 @@
   <nav>
     <input id="nav_button" name='nav_button' type='checkbox' value='valuable'/>
     <label for="nav_button"></label>
-    <div class="nav_overlay">
+    <div id="nav_overlay">
       <div class="nav_links">
-        <a class="nav_link" href="">Oferta</a>
-        <a class="nav_link" href="">Klienci</a>
-        <a class="nav_link" href="">O mnie</a>
-        <a class="nav_link" href="">Kontakt</a>
+        <a class="nav_link" href="/#Oferta">Oferta</a>
+        <a class="nav_link" href="/#Klienci">Klienci</a>
+        <a class="nav_link" href="/#O_mnie">O mnie</a>
+        <a class="nav_link" href="/#Kontakt">Kontakt</a>
         <div class="nav_icons">
           <a class="nav_icon" href="https://www.facebook.com/istnestudio">
             <svg fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
@@ -626,63 +626,55 @@
     </ol>
   </div>
 </main>
-<footer>
+<footer id="Kontakt">
   <div class="footer_bg">
-    <img alt="Obsługa inwestycji deweloperskich" src="./img/mobile/hero_mobile.jpg"/>
+    <picture>
+      <source srcset="./img/desktop/footer_desktop.jpg" media="(min-width: 1280px)">
+      <img src="./img/mobile/hero_mobile.jpg" alt="Obsługa inwestycji deweloperskich" />
+    </picture>
   </div>
-  <h4>Napisz do mnie!</h4>
-  <div>
-    <div>
-      <svg class="footer_icon" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <mask height="20" id="a" mask-type="alpha" maskUnits="userSpaceOnUse" width="20" x="0" y="0">
-          <path clip-rule="evenodd" d="m0 4.8828e-4h19.499v19.499h-19.499v-19.499z" fill="#fff" fill-rule="evenodd"/>
-        </mask>
-        <g mask="url(#a)">
-          <path
-            clip-rule="evenodd"
-            d="m8.8049 11.818 3.657 5.933c0.16 0.26 0.41 0.257 0.511 0.243s0.344-0.076 0.432-0.371l4.573-15.445c0.08-0.273-0.067-0.459-0.133-0.525-0.064-0.066-0.247-0.207-0.512-0.132l-15.456 4.526c-0.29301 0.086-0.35701 0.332-0.37101 0.433-0.014 0.103-0.018 0.358 0.24101 0.521l6.001 3.753 5.302-5.358c0.291-0.294 0.766-0.297 1.061-6e-3s0.297 0.767 6e-3 1.061l-5.312 5.367zm4.09 7.682c-0.696 0-1.334-0.354-1.71-0.962l-3.877-6.291-6.356-3.975c-0.685-0.429-1.043-1.193-0.932-1.996 0.11-0.803 0.661-1.441 1.435-1.668l15.456-4.526c0.711-0.208 1.473-0.011 1.997 0.511 0.524 0.527 0.719 1.297 0.507 2.011l-4.573 15.444c-0.229 0.777-0.869 1.326-1.67 1.433-0.094 0.012-0.185 0.019-0.277 0.019z"
-            fill="#130F26" fill-rule="evenodd"/>
-        </g>
-      </svg>
-      <a class="footer_item footer_link" href="mailto:mariusz@istnestudio.pl">mariusz@istnestudio.pl</a>
-      <a class="footer_item" href="tel:+48500625108">tel. 500625108</a>
+  <div class="footer_wrapper">
+    <h4>Napisz do mnie!</h4>
+    <div class="footer_links">
+      <div>
+        <svg class="footer_icon" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <mask id="a" x="0" y="0" width="20" height="20" mask-type="alpha" maskUnits="userSpaceOnUse">
+            <path d="m0 4.8828e-4h19.499v19.499h-19.499v-19.499z" clip-rule="evenodd" fill="#fff" fill-rule="evenodd"/>
+          </mask>
+          <g mask="url(#a)">
+            <path d="m8.8049 11.818 3.657 5.933c0.16 0.26 0.41 0.257 0.511 0.243s0.344-0.076 0.432-0.371l4.573-15.445c0.08-0.273-0.067-0.459-0.133-0.525-0.064-0.066-0.247-0.207-0.512-0.132l-15.456 4.526c-0.29301 0.086-0.35701 0.332-0.37101 0.433-0.014 0.103-0.018 0.358 0.24101 0.521l6.001 3.753 5.302-5.358c0.291-0.294 0.766-0.297 1.061-6e-3s0.297 0.767 6e-3 1.061l-5.312 5.367zm4.09 7.682c-0.696 0-1.334-0.354-1.71-0.962l-3.877-6.291-6.356-3.975c-0.685-0.429-1.043-1.193-0.932-1.996 0.11-0.803 0.661-1.441 1.435-1.668l15.456-4.526c0.711-0.208 1.473-0.011 1.997 0.511 0.524 0.527 0.719 1.297 0.507 2.011l-4.573 15.444c-0.229 0.777-0.869 1.326-1.67 1.433-0.094 0.012-0.185 0.019-0.277 0.019z" clip-rule="evenodd" fill="#130F26" fill-rule="evenodd"/>
+          </g>
+        </svg>
+        <a href="mailto:mariusz@istnestudio.pl" class="footer_item footer_link">mariusz@istnestudio.pl</a>
+        <a href="tel:+48500625108" class="footer_item">tel. 500625108</a>
+      </div>
+      <div>
+        <svg class="footer_icon footer_work" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="m9.9951 15.427c-0.414 0-0.75-0.336-0.75-0.75v-2.537c0-0.414 0.336-0.75 0.75-0.75 0.41398 0 0.74998 0.336 0.74998 0.75v2.537c0 0.414-0.336 0.75-0.74998 0.75z" clip-rule="evenodd" fill="#130F26" fill-rule="evenodd"/>
+          <mask id="b" x="0" y="2" width="20" height="11" mask-type="alpha" maskUnits="userSpaceOnUse">
+            <path d="m2.4414e-4 2.5796h19.99v10.311h-19.99v-10.311z" clip-rule="evenodd" fill="#fff" fill-rule="evenodd"/>
+          </mask>
+          <g mask="url(#b)">
+            <path d="m1.5002 9.3926c2.376 1.291 5.372 1.998 8.49 1.998 3.124 0 6.123-0.707 8.5-1.998v-3.002c0-1.275-1.031-2.311-2.3-2.311h-12.38c-1.274 0-2.31 1.032-2.31 2.301v3.012zm8.49 3.498c-3.545 0-6.962-0.858-9.619-2.414-0.23-0.134-0.371-0.38-0.371-0.64701v-3.449c0-2.096 1.709-3.801 3.81-3.801h12.38c2.096 0 3.8 1.709 3.8 3.811v3.439c0 0.26701-0.142 0.51301-0.371 0.64701-2.657 1.556-6.077 2.414-9.629 2.414z" clip-rule="evenodd" fill="#130F26" fill-rule="evenodd"/>
+          </g>
+          <mask id="a" x="5" y="0" width="10" height="5" mask-type="alpha" maskUnits="userSpaceOnUse">
+            <path d="m5.7451 0h8.5v4.0759h-8.5v-4.0759z" clip-rule="evenodd" fill="#fff" fill-rule="evenodd"/>
+          </mask>
+          <g mask="url(#a)">
+            <path d="m13.495 4.076c-0.414 0-0.75-0.336-0.75-0.75v-0.366c0-0.805-0.655-1.46-1.46-1.46h-2.58c-0.805 0-1.46 0.655-1.46 1.46v0.366c0 0.414-0.336 0.75-0.75 0.75s-0.75-0.336-0.75-0.75v-0.366c0-1.632 1.328-2.96 2.96-2.96h2.58c1.632 0 2.96 1.328 2.96 2.96v0.366c0 0.414-0.336 0.75-0.75 0.75z" clip-rule="evenodd" fill="#130F26" fill-rule="evenodd"/>
+          </g>
+          <path d="m15.795 19.74h-11.6c-2.075 0-3.822-1.621-3.979-3.691l-0.19-2.509c-0.031-0.413 0.279-0.774 0.692-0.805 0.415-0.015 0.773 0.278 0.805 0.692l0.189 2.508c0.098 1.292 1.188 2.305 2.483 2.305h11.6c1.295 0 2.386-1.013 2.483-2.305l0.19-2.508c0.032-0.414 0.399-0.708 0.805-0.692 0.413 0.031 0.722 0.392 0.691 0.805l-0.19 2.509c-0.157 2.07-1.904 3.691-3.979 3.691z" clip-rule="evenodd" fill="#130F26" fill-rule="evenodd"/>
+        </svg>
+        <div class="footer_item">Stare Babice</div>
+        <div class="footer_item">nip: 1182217147</div>
+      </div>
     </div>
-    <div>
-      <svg class="footer_icon footer_work" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <path
-          clip-rule="evenodd"
-          d="m9.9951 15.427c-0.414 0-0.75-0.336-0.75-0.75v-2.537c0-0.414 0.336-0.75 0.75-0.75 0.41398 0 0.74998 0.336 0.74998 0.75v2.537c0 0.414-0.336 0.75-0.74998 0.75z"
-          fill="#130F26" fill-rule="evenodd"/>
-        <mask height="11" id="b" mask-type="alpha" maskUnits="userSpaceOnUse" width="20" x="0" y="2">
-          <path clip-rule="evenodd" d="m2.4414e-4 2.5796h19.99v10.311h-19.99v-10.311z" fill="#fff"
-                fill-rule="evenodd"/>
-        </mask>
-        <g mask="url(#b)">
-          <path
-            clip-rule="evenodd"
-            d="m1.5002 9.3926c2.376 1.291 5.372 1.998 8.49 1.998 3.124 0 6.123-0.707 8.5-1.998v-3.002c0-1.275-1.031-2.311-2.3-2.311h-12.38c-1.274 0-2.31 1.032-2.31 2.301v3.012zm8.49 3.498c-3.545 0-6.962-0.858-9.619-2.414-0.23-0.134-0.371-0.38-0.371-0.64701v-3.449c0-2.096 1.709-3.801 3.81-3.801h12.38c2.096 0 3.8 1.709 3.8 3.811v3.439c0 0.26701-0.142 0.51301-0.371 0.64701-2.657 1.556-6.077 2.414-9.629 2.414z"
-            fill="#130F26" fill-rule="evenodd"/>
-        </g>
-        <mask height="5" id="a" mask-type="alpha" maskUnits="userSpaceOnUse" width="10" x="5" y="0">
-          <path clip-rule="evenodd" d="m5.7451 0h8.5v4.0759h-8.5v-4.0759z" fill="#fff" fill-rule="evenodd"/>
-        </mask>
-        <g mask="url(#a)">
-          <path
-            clip-rule="evenodd"
-            d="m13.495 4.076c-0.414 0-0.75-0.336-0.75-0.75v-0.366c0-0.805-0.655-1.46-1.46-1.46h-2.58c-0.805 0-1.46 0.655-1.46 1.46v0.366c0 0.414-0.336 0.75-0.75 0.75s-0.75-0.336-0.75-0.75v-0.366c0-1.632 1.328-2.96 2.96-2.96h2.58c1.632 0 2.96 1.328 2.96 2.96v0.366c0 0.414-0.336 0.75-0.75 0.75z"
-            fill="#130F26" fill-rule="evenodd"/>
-        </g>
-        <path
-          clip-rule="evenodd"
-          d="m15.795 19.74h-11.6c-2.075 0-3.822-1.621-3.979-3.691l-0.19-2.509c-0.031-0.413 0.279-0.774 0.692-0.805 0.415-0.015 0.773 0.278 0.805 0.692l0.189 2.508c0.098 1.292 1.188 2.305 2.483 2.305h11.6c1.295 0 2.386-1.013 2.483-2.305l0.19-2.508c0.032-0.414 0.399-0.708 0.805-0.692 0.413 0.031 0.722 0.392 0.691 0.805l-0.19 2.509c-0.157 2.07-1.904 3.691-3.979 3.691z"
-          fill="#130F26" fill-rule="evenodd"/>
-      </svg>
-      <div class="footer_item">Stare Babice</div>
-      <div class="footer_item">nip: 1182217147</div>
-    </div>
+    <!--    <a href="/polityka-prywatnosci.html">polityka prywatnosci</a>-->
+    <a href="/polityka-prywatnosci.html" class="privacy_link">polityka prywatnosci</a>
+
+    <!--      TODO poprawić politykę prywatności-->
+
   </div>
-  <!--    <a href="/polityka-prywatnosci.html">polityka prywatnosci</a>-->
-  <a class="privacy_link" href="">polityka prywatnosci</a>
 </footer>
 
 
