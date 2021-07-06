@@ -37,20 +37,17 @@
 </head>
 
 <body>
-
-<!-- Add your site or application content here -->
-
 <header>
   <a href="/" class="logo">istnestudio</a>
   <nav>
     <input id="nav_button" name='nav_button' type='checkbox' value='valuable'/>
     <label for="nav_button"></label>
-    <div class="nav_overlay">
+    <div id="nav_overlay">
       <div class="nav_links">
-        <a class="nav_link" href="">Oferta</a>
-        <a class="nav_link" href="">Klienci</a>
-        <a class="nav_link" href="">O mnie</a>
-        <a class="nav_link" href="">Kontakt</a>
+        <a class="nav_link" href="#Oferta">Oferta</a>
+        <a class="nav_link" href="#Klienci">Klienci</a>
+        <a class="nav_link" href="#O_mnie">O mnie</a>
+        <a class="nav_link" href="#Kontakt">Kontakt</a>
         <div class="nav_icons">
           <a class="nav_icon" href="https://www.facebook.com/istnestudio">
             <svg fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
@@ -82,10 +79,11 @@
 </header>
 <section class="hero">
   <div class="hero_img">
-    <picture>
-      <source srcset="./img/desktop/hero_desktop.jpg" media="(min-width: 1280px)">
-      <img src="./img/mobile/hero_mobile.jpg" alt="Obsługa inwestycji deweloperskich">
-    </picture>
+    <img src="./img/mobile/hero_mobile.jpg" alt="Obsługa inwestycji deweloperskich">
+    <video autoplay loop muted poster="./img/desktop/hero_desktop.jpg">
+      <source src="./video/hero_video.mov" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
     <h1>Obsługa inwestycji deweloperskich <strong>Warszawa i okolice</strong></h1>
   </div>
   <svg width="42" height="49" viewBox="0 0 42 49" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
@@ -115,7 +113,7 @@
   </svg>
   </div>
 </section>
-  <article class="copy_article">
+  <article class="copy_article" id="Oferta">
     <section class="copy copy_first">
       <picture>
         <source srcset="./img/desktop/ipad_desktop.png" media="(min-width: 1280px)">
@@ -212,7 +210,7 @@
       </div>
     </div>
   </article>
-  <section class="testimonials">
+  <section class="testimonials" id="Klienci">
       <div class="testimonials_bg">
         <h4>
           Mazdom
@@ -227,7 +225,7 @@
         </picture>
     </div>
   </section>
-  <section class="aboutMe">
+  <section class="aboutMe" id="O_mnie">
     <div class="aboutMe_img_wrapper">
       <img src="./img/common/portrait.jpg" alt="Mariusz Krzywnicki" />
       <a href="https://www.linkedin.com/in/mariusz-krzywnicki-57956b143/" target="_blank">
@@ -254,7 +252,7 @@
         Twojego sukcesu!
       </p>
   </section>
-  <footer>
+  <footer id="Kontakt">
     <div class="footer_bg">
       <picture>
         <source srcset="./img/desktop/footer_desktop.jpg" media="(min-width: 1280px)">

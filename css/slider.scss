@@ -58,6 +58,10 @@
   .splide__pagination__page.is-active {
     background-color: #F2AE30;
   }
+
+  .splide__pagination:last-of-type:not(:only-of-type) {
+      display: none;
+  }
 }
 
 

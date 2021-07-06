@@ -15,11 +15,25 @@ import Splide from '@splidejs/splide';
     }
   }
 
-  //FIXME poprawić paginację
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
 
-  new Splide( '.splide', {
-    // autoWidth: true,
-    // focus: 'center',
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  var navOverlay = document.getElementById('nav_overlay');
+  if(window.innerWidth < 1280) {
+    navOverlay.addEventListener('click', function (e) {
+      var navButton = document.getElementById('nav_button');
+      navButton.checked = false;
+    })
+  }
+
+  new Splide( '#splide', {
     padding: '0 10px',
   } ).mount();
 })();
