@@ -33,7 +33,11 @@ import Splide from '@splidejs/splide';
     })
   }
 
-  new Splide( '#splide', {
-    padding: '0 10px',
-  } ).mount();
+  var slider = document.getElementById('splide');
+
+  if(slider) {
+    new Splide('#splide', {
+      padding: '0 10px',
+    }).mount();
+  }
 })();
