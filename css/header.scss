@@ -55,15 +55,19 @@ header {
   }
   &:checked {
     + label {
+      &:before, &:after {
+        position: fixed;
+        top: 40px;
+        right: 40px;
+      }
+
       &:before {
         transform: rotate(-45deg);
-        top: 1px;
       }
       &:after {
         width: 25px;
         height: 4px;
         transform: rotate(45deg);
-        top: 1px;
       }
     }
     ~ #nav_overlay {
