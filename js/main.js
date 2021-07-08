@@ -47,6 +47,9 @@ import Splide from '@splidejs/splide';
   if(slider) {
     new Splide('#splide', {
       padding: '0 10px',
+      type  : 'fade',
+      rewind: true,
+      speed: 500,
     }).mount();
   }
 })();
