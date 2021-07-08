@@ -25,10 +25,19 @@ import Splide from '@splidejs/splide';
     });
   });
 
-  var navOverlay = document.getElementById('nav_overlay');
   if(window.innerWidth < 1280) {
+    var navButtonLabel = document.getElementById('nav_button_label');
+    navButtonLabel.onclick = function() {
+      if(typeof window.onscroll === 'function') {
+        return window.onscroll = null
+      }
+      window.onscroll = function () { window.scrollTo(0, 0); };
+    }
+
+    var navOverlay = document.getElementById('nav_overlay');
     navOverlay.addEventListener('click', function (e) {
       var navButton = document.getElementById('nav_button');
+      window.onscroll = null
       navButton.checked = false;
     })
   }
