@@ -1,4 +1,5 @@
 import Splide from '@splidejs/splide';
+import skrollr from 'skrollr';
 (window.onload = function() {
   var cookies = document.cookie;
   var acceptedCookies = cookies.indexOf('accepted=1');
@@ -52,4 +53,11 @@ import Splide from '@splidejs/splide';
       speed: 500,
     }).mount();
   }
+
+  var homePage = document.getElementById('homePage');
+
+  if(homePage) {
+    var s = skrollr.init();
+  }
+
 })();

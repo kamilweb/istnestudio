@@ -16,6 +16,7 @@
     "sass": "^1.35.1"
   },
   "dependencies": {
-    "@splidejs/splide": "^2.4.21"
+    "@splidejs/splide": "^2.4.21",
+    "skrollr": "^0.6.26"
   }
 }

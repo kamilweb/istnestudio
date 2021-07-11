@@ -1,30 +1,104 @@
+@keyframes heartBeat {
+  0% {
+    transform: scale( 1 );
+  }
+  70% {
+    transform: scale( 1 );
+  }
+  85% {
+    transform: scale( 1.25 );
+  }
+  100% {
+    transform: scale( 1 );
+  }
+}
+
+@keyframes cardIntro {
+  0% {
+    height: 100vh;
+    padding: 0;
+  }
+  70% {
+    height: 100vh;
+    padding: 0;
+  }
+  100% {
+    padding: 87px 24px 48px;
+    height: calc(100vh - 135px);
+  }
+}
+
+@keyframes cardIntroWide {
+  0% {
+    height: 100vh;
+    padding: 0;
+  }
+  70% {
+    height: 100vh;
+    padding: 0;
+  }
+  100% {
+    height: calc(100vh - 135px);
+    padding: 97px 48px 48px;
+  }
+}
+
+@keyframes bordersIntro {
+  0% {
+    border-radius: 0;
+  }
+  70% {
+    border-radius: 0;
+  }
+  100% {
+    border-radius: 30px;
+  }
+}
+
+@keyframes cookieIntro {
+  0% {
+    opacity: 0;
+    transform: scale(.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
 .hero {
-  height: calc(100vh - 135px);
-  padding: 22px 24px 48px;
+  //height: calc(100vh - 135px);
+  //padding: 87px 24px 48px;
+  height: 100vh;
   position: relative;
+  animation: cardIntro 2s forwards;
+  //box-sizing: border-box;
 
   @media only screen and (min-width: 1280px) {
-    padding: 32px 48px 48px;
+    animation: cardIntroWide 2s forwards;
   }
 
   .arrow {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    margin-left: -20px;
     bottom: 23px;
+    animation: heartBeat 2s infinite;
   }
 }
 
 .hero_img {
   height: 100%;
   width: 100%;
-  border-radius: 30px;
+  //border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   position: relative;
   text-align: center;
+  animation: bordersIntro 2s forwards;
   &:before {
     content: '';
     display: block;
@@ -34,7 +108,8 @@
     right: 0;
     bottom: 0;
     background: rgba(0,0,0,0.65);
-    border-radius: 30px;
+    animation: bordersIntro 2s forwards;
+    //border-radius: 30px;
   }
 
 
@@ -51,7 +126,8 @@
     line-height: 32px;
     color: #fff;
     position: absolute;
-    bottom: 47px;
+    //bottom: 47px;
+    bottom: 80px;
     width: 286px;
     @media only screen and (min-width: 768px) {
       bottom: 69px;
@@ -93,6 +169,8 @@
   box-sizing: border-box;
   width: 300px;
   min-height: 178px;
+  opacity: 0;
+  animation: cookieIntro .3s forwards 2s;
 
   @media only screen and (min-width: 1280px) {
     top: auto;

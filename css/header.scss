@@ -1,3 +1,33 @@
+@keyframes navIntroColor {
+  0% {
+    color: #fff;
+  }
+  70% {
+    color: #fff;
+  }
+  75% {
+    color: #000;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+@keyframes iconsPath {
+  0% {
+    fill: #fff;
+  }
+  70% {
+    fill: #fff;
+  }
+  75% {
+    fill: #000;
+  }
+  100% {
+    fill: #000;
+  }
+}
+
 header {
   display: flex;
   height: 35px;
@@ -5,6 +35,15 @@ header {
   @media only screen and (min-width: 1280px) {
     padding-left: 48px;
     padding-right: 48px;
+  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  animation: navIntroColor 2s forwards;
+  a {
+    color: inherit;
   }
 }
 
@@ -14,7 +53,6 @@ header {
   font-size: 24px;
   line-height: 32px;
   margin-right: auto;
-  color: #000;
   &:hover, &:active {
     text-decoration: none;
   }
@@ -112,7 +150,6 @@ header {
 }
 
 .nav_link {
-  color: #000;
   font-size: 24px;
   line-height: 32px;
   text-align: right;
@@ -150,6 +187,9 @@ header {
     &:last-of-type {
       margin-right: 0;
     }
+  }
+  path {
+    animation: iconsPath 2s forwards;
   }
 }
 
