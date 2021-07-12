@@ -15,30 +15,30 @@
 
 @keyframes cardIntro {
   0% {
-    height: 100vh;
+    //height: 100vh;
     padding: 0;
   }
   70% {
-    height: 100vh;
+    //height: 100vh;
     padding: 0;
   }
   100% {
     padding: 87px 24px 48px;
-    height: calc(100vh - 135px);
+    //height: calc(100vh - 135px);
   }
 }
 
 @keyframes cardIntroWide {
   0% {
-    height: 100vh;
+    //height: 100vh;
     padding: 0;
   }
   70% {
-    height: 100vh;
+    //height: 100vh;
     padding: 0;
   }
   100% {
-    height: calc(100vh - 135px);
+    //height: calc(100vh - 135px);
     padding: 97px 48px 48px;
   }
 }
@@ -55,16 +55,7 @@
   }
 }
 
-@keyframes cookieIntro {
-  0% {
-    opacity: 0;
-    transform: scale(.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
+
 
 
 .hero {
@@ -73,7 +64,8 @@
   height: 100vh;
   position: relative;
   animation: cardIntro 2s forwards;
-  //box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
 
   @media only screen and (min-width: 1280px) {
     animation: cardIntroWide 2s forwards;
@@ -154,6 +146,17 @@
         line-height: 32px;
       }
     }
+  }
+}
+
+@keyframes cookieIntro {
+  0% {
+    opacity: 0;
+    transform: scale(.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 

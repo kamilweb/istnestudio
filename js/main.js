@@ -1,5 +1,6 @@
 import Splide from '@splidejs/splide';
 import skrollr from 'skrollr';
+
 (window.onload = function() {
   var cookies = document.cookie;
   var acceptedCookies = cookies.indexOf('accepted=1');
@@ -54,10 +55,14 @@ import skrollr from 'skrollr';
     }).mount();
   }
 
-  var homePage = document.getElementById('homePage');
+  var homePage = document.getElementById('skrollr-body');
 
   if(homePage) {
     var s = skrollr.init();
+    if(window.innerWidth < 1280) {
+      window.onscroll = function () {
+        window.scrollTo(0, 0);
+      };
+    }
   }
-
 })();
