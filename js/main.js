@@ -57,12 +57,7 @@ import skrollr from 'skrollr';
 
   var homePage = document.getElementById('skrollr-body');
 
-  if(homePage) {
+  if(homePage && window.innerWidth >= 1280) {
     var s = skrollr.init();
-    if(window.innerWidth < 1280) {
-      window.onscroll = function () {
-        window.scrollTo(0, 0);
-      };
-    }
   }
 })();

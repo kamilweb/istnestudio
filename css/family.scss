@@ -6,6 +6,16 @@
   }
   @media only screen and (min-width: 1280px) {
     padding: 109px 96px 30px;
+    .family_bg {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #F2AE30;
+      opacity: 0.9;
+    }
   }
   @media only screen and (min-width: 1440px) {
     padding-bottom: 70px;
@@ -36,6 +46,7 @@
       font-size: 32px;
       line-height: 48px;
       width: calc(50% - 24px);
+      position: relative;
     }
   }
   p {
@@ -49,6 +60,7 @@
       margin: 189px 0 0 calc(50% + 12px);
       font-size: 24px;
       line-height: 40px;
+      position: relative;
     }
     @media only screen and (min-width: 1440px) {
       margin-top: 30%;
@@ -66,6 +78,10 @@
       top: -60px;
     }
   }
+}
+
+.family_bg {
+  display: none;
 }
 
 .family_wrapper {
