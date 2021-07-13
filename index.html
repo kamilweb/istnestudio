@@ -98,16 +98,14 @@
 <main>
   <section class="family">
   <div class="family_wrapper">
-    <div class="family_bg"
-         data--100-bottom-top="opacity: 0;"
-         data-center-center="opacity: 0.9;"
-         data-bottom-center="opacity: 0.9;"
-         data-top-center="opacity: 0.9;"
-         data--100-top-bottom="opacity: 0;"
-    ></div>
   <picture>
     <source srcset="./img/desktop/family_desktop.jpg" media="(min-width: 1280px)">
-    <img src="./img/mobile/family_mobile.jpg" alt="Projektowanie materiałów sprzedażowych">
+    <img src="./img/mobile/family_mobile.jpg" alt="Projektowanie materiałów sprzedażowych"
+         data--100-bottom-top="opacity:0;"
+         data-top-center="opacity:1;"
+         data-bottom-center="opacity:1;"
+         data-center-center="opacity:1;"
+         data--100-top-bottom="opacity:0;">
   </picture>
 
   <h3>Twój klient szuka przytulnego “M” - bezpieczeństwa dla siebie, partnera i dzieci.</h3>
@@ -125,6 +123,8 @@
            data-500-bottom="
            opacity: 0;transform: translateY(100px)rotate(0deg);"
            data-200-bottom="
+           opacity: 1;transform: translateY(0px) rotate(7deg);"
+           data--200-top="
            opacity: 1;transform: translateY(0px) rotate(15deg);"
       />
       <img src="./img/mobile/ipad_mobile.png" alt="ipad" class="ipad ipad_mobile" data-400-bottom="
@@ -314,7 +314,15 @@
       </p>
     </div>
   </section>
-  <section class="prefooter">
+  <div class="footer_bg_wrapper">
+    <div class="prefooter_bg"
+         data-center-top="border-radius:0 0 0 0;right:0;left:0"
+         data-center-center="border-radius:0 0 30px 30px;right:20px;left:20px;width:auto;"
+    ></div>
+  <section class="prefooter"
+           data-center-top="border-radius:0;margin-left:0;margin-right:0;transform: translateY(200px);"
+           data-center-center="border-radius:30px;margin-left:48px;margin-right:48px;transform: translateY(0);"
+  >
       <p>
         Jeśli myślisz, że jestem odpowiednią osobą do promocji Twojej inwestycji, to masz rację ;) Zadzwoń do mnie lub
         napisz. Chętnie porozmawiam, szczerze doradzę i... mam nadzieję rozpoczniemy współpracę, która będzie gwarancją
@@ -367,6 +375,7 @@
       <a href="/polityka-prywatnosci.html" class="privacy_link">polityka prywatnosci</a>
     </div>
   </footer>
+  </div>
 </main>
 
 

@@ -15,30 +15,24 @@
 
 @keyframes cardIntro {
   0% {
-    //height: 100vh;
     padding: 0;
   }
   70% {
-    //height: 100vh;
     padding: 0;
   }
   100% {
     padding: 87px 24px 48px;
-    //height: calc(100vh - 135px);
   }
 }
 
 @keyframes cardIntroWide {
   0% {
-    //height: 100vh;
     padding: 0;
   }
   70% {
-    //height: 100vh;
     padding: 0;
   }
   100% {
-    //height: calc(100vh - 135px);
     padding: 97px 48px 48px;
   }
 }
@@ -59,8 +53,6 @@
 
 
 .hero {
-  //height: calc(100vh - 135px);
-  //padding: 87px 24px 48px;
   height: 100vh;
   position: relative;
   animation: cardIntro 2s forwards;
@@ -83,7 +75,6 @@
 .hero_img {
   height: 100%;
   width: 100%;
-  //border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,7 +92,6 @@
     bottom: 0;
     background: rgba(0,0,0,0.65);
     animation: bordersIntro 2s forwards;
-    //border-radius: 30px;
   }
 
 
@@ -118,7 +108,6 @@
     line-height: 32px;
     color: #fff;
     position: absolute;
-    //bottom: 47px;
     bottom: 80px;
     width: 286px;
     @media only screen and (min-width: 768px) {
