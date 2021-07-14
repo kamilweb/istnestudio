@@ -1250,7 +1250,7 @@ header a {
     width: auto;
     height: 50%;
     z-index: 1;
-    transition: 1.5s ease;
+    transition: 1s ease;
   }
   .prefooter p {
     max-width: 1100px;
