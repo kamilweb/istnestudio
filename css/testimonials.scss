@@ -1,22 +1,25 @@
 .testimonials {
-  margin: 65px 24px 275px;
+  padding-top: 65px;
+  margin: 0 24px 175px;
   color: #fff;
   @media only screen and (min-width: 768px) {
-    margin-top: 96px;
+    padding-top: 96px;
   }
 
   @media only screen and (min-width: 1280px) {
     max-width: 1440px;
-    margin: 144px 48px 260px;
+    margin: 0 48px 160px;
+    padding-top: 144px;
   }
 
   @media only screen and (min-width: 1440px) {
-    margin-top: 94px;
-    margin-bottom: 240px;
+    padding-top: 94px;
+    margin-bottom: 140px;
   }
 
   @media only screen and (min-width: 1920px) {
     margin-top: 90px;
+    padding-top: 90px;
     max-width: 100%;
   }
 

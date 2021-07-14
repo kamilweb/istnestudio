@@ -90,6 +90,20 @@ a:hover {
     fill: #000;
   }
 }
+@keyframes menuIconPath {
+  0% {
+    background-color: #fff;
+  }
+  70% {
+    background-color: #fff;
+  }
+  75% {
+    background-color: #000;
+  }
+  100% {
+    background-color: #000;
+  }
+}
 header {
   display: flex;
   height: 35px;
@@ -99,7 +113,6 @@ header {
   left: 0;
   right: 0;
   z-index: 999;
-  animation: navIntroColor 2s forwards;
 }
 @media only screen and (min-width: 1280px) {
   header {
@@ -119,6 +132,13 @@ header a {
 }
 .logo:hover, .logo:active {
   text-decoration: none;
+}
+
+#skrollr-body header {
+  animation: navIntroColor 2s forwards;
+}
+#skrollr-body #nav_button + label:before, #skrollr-body #nav_button + label:after {
+  animation: menuIconPath 2s forwards;
 }
 
 #nav_button {
@@ -238,7 +258,7 @@ header a {
 .nav_icons {
   display: flex;
   position: absolute;
-  bottom: 77px;
+  bottom: 127px;
   left: 70px;
 }
 @media only screen and (min-width: 1280px) {
@@ -720,6 +740,7 @@ header a {
 }
 @media only screen and (min-width: 1280px) {
   .iphone_wrapper {
+    transition: 0.2s linear;
     width: 251px;
     height: 502px;
     position: absolute;
@@ -963,29 +984,32 @@ header a {
 }
 
 .testimonials {
-  margin: 65px 24px 275px;
+  padding-top: 65px;
+  margin: 0 24px 175px;
   color: #fff;
 }
 @media only screen and (min-width: 768px) {
   .testimonials {
-    margin-top: 96px;
+    padding-top: 96px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .testimonials {
     max-width: 1440px;
-    margin: 144px 48px 260px;
+    margin: 0 48px 160px;
+    padding-top: 144px;
   }
 }
 @media only screen and (min-width: 1440px) {
   .testimonials {
-    margin-top: 94px;
-    margin-bottom: 240px;
+    padding-top: 94px;
+    margin-bottom: 140px;
   }
 }
 @media only screen and (min-width: 1920px) {
   .testimonials {
     margin-top: 90px;
+    padding-top: 90px;
     max-width: 100%;
   }
 }
@@ -1066,6 +1090,9 @@ header a {
   }
 }
 
+.aboutMe {
+  padding-top: 100px;
+}
 @media only screen and (min-width: 1280px) {
   .aboutMe {
     display: flex;
@@ -1213,20 +1240,21 @@ header a {
     line-height: 40px;
     display: flex;
     align-items: center;
-    margin: 0 48px;
+    margin: 0;
     box-sizing: border-box;
     padding: 140px 85px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 50%;
+    z-index: 1;
+    transition: 1.5s ease;
   }
   .prefooter p {
     max-width: 1100px;
     margin: 0 auto;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .prefooter {
-    height: 50vh;
-    margin-bottom: 48px;
   }
 }
 .prefooter p {
@@ -1234,21 +1262,9 @@ header a {
 }
 
 @media only screen and (min-width: 1280px) {
-  .prefooter_bg {
-    transition: 0.6s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 50%;
-    background-color: #fff;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
   .footer_bg_wrapper {
     position: relative;
+    height: 100vh;
   }
   .footer_bg_wrapper footer {
     position: static;
@@ -1261,8 +1277,9 @@ footer {
   line-height: 32px;
   padding: 63px 24px 60px;
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1280px) {
   footer {
+    padding-top: 50vh;
     height: 50vh;
     box-sizing: border-box;
   }
@@ -1450,7 +1467,7 @@ footer a {
   font-size: 36px;
   line-height: 48px;
   color: #F2AE30;
-  margin-top: 68px;
+  margin-top: 128px;
 }
 @media only screen and (min-width: 1280px) {
   .policy_main_header {

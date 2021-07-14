@@ -1,5 +1,6 @@
 import Splide from '@splidejs/splide';
 import skrollr from 'skrollr';
+import smoothscroll from 'smoothscroll-polyfill';
 
 (window.onload = function() {
   var cookies = document.cookie;
@@ -56,6 +57,7 @@ import skrollr from 'skrollr';
   }
 
   var homePage = document.getElementById('skrollr-body');
+  smoothscroll.polyfill();
 
   if(homePage && window.innerWidth >= 1280) {
     var s = skrollr.init();

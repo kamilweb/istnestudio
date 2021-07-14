@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@splidejs/splide": "^2.4.21",
-    "skrollr": "^0.6.26"
+    "skrollr": "^0.6.26",
+    "smoothscroll-polyfill": "^0.4.4"
   }
 }
