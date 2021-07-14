@@ -1271,6 +1271,13 @@ header a {
   }
 }
 
+@media only screen and (min-width: 1280px) {
+  #skrollr-body footer {
+    padding-top: 50vh;
+    height: 50vh;
+  }
+}
+
 footer {
   position: relative;
   font-size: 24px;
@@ -1279,8 +1286,6 @@ footer {
 }
 @media only screen and (min-width: 1280px) {
   footer {
-    padding-top: 50vh;
-    height: 50vh;
     box-sizing: border-box;
   }
 }
@@ -1473,7 +1478,7 @@ footer a {
   .policy_main_header {
     font-size: 64px;
     line-height: 72px;
-    margin-top: 48px;
+    margin-top: 168px;
     margin-bottom: 128px;
   }
 }
